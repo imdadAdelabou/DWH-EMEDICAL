@@ -1,3 +1,4 @@
+import 'package:emedical/auth/sign_up.dart';
 import 'package:emedical/components/custom_button.dart';
 import 'package:emedical/components/custom_textformfield.dart';
 import 'package:emedical/helpers/constant.dart';
@@ -54,8 +55,9 @@ class Login extends StatelessWidget {
                   SizedBox(
                     height: 30,
                   ),
-                  const CustomButton(
+                  CustomButton(
                     buttonContent: "Connexion",
+                    action: () {},
                   ),
                   SizedBox(
                     height: 20,
@@ -64,11 +66,16 @@ class Login extends StatelessWidget {
                   SizedBox(
                     height: 20,
                   ),
-                  const CustomButton(buttonContent: "Connexion avec Google")
+                  CustomButton(
+                    buttonContent: "Connexion avec Google",
+                    action: () {},
+                  )
                 ],
               ),
               TextButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.of(context).pushNamed(SignUp.routeName);
+                  },
                   child: Text('Pas de compte? Inscrivez-vous.'))
             ],
           ),

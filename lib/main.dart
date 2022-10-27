@@ -1,3 +1,5 @@
+import 'package:emedical/views/home.dart';
+import 'package:emedical/auth/sign_up.dart';
 import 'package:emedical/auth/login.dart';
 import 'package:emedical/helpers/constant.dart';
 import 'package:flutter/material.dart';
@@ -21,6 +23,8 @@ class MyApp extends StatelessWidget {
       home: const SplashScreen(),
       routes: {
         Login.routeName: (_) => const Login(),
+        SignUp.routeName: (_) => const SignUp(),
+        Home.routeName: (_) => const Home(),
       },
       debugShowCheckedModeBanner: false,
     );
