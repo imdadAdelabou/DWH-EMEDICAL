@@ -1,3 +1,4 @@
+import 'package:emedical/views/home_medical.dart';
 import 'package:emedical/views/home.dart';
 import 'package:emedical/auth/sign_up.dart';
 import 'package:emedical/auth/login.dart';
@@ -25,6 +26,7 @@ class MyApp extends StatelessWidget {
         Login.routeName: (_) => const Login(),
         SignUp.routeName: (_) => const SignUp(),
         Home.routeName: (_) => const Home(),
+        HomeMedical.routeName: (_) => const HomeMedical(),
       },
       debugShowCheckedModeBanner: false,
     );

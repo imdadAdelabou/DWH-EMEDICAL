@@ -1,7 +1,9 @@
+import 'dart:ui';
+
 import 'package:emedical/components/custom_button.dart';
 import 'package:emedical/components/custom_textformfield.dart';
 import 'package:emedical/helpers/constant.dart';
-import 'package:emedical/views/home.dart';
+import 'package:emedical/views/home_medical.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -19,6 +21,14 @@ class SignUp extends StatelessWidget {
         child: SingleChildScrollView(
           child: Column(
             children: [
+              Text(
+                "Inscription",
+                style: TextStyle(
+                  fontSize: 35,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.black,
+                ),
+              ),
               SizedBox(height: 20.0),
               CustomTextFormField(
                 htinText: "Nom",
@@ -64,7 +74,7 @@ class SignUp extends StatelessWidget {
               CustomButton(
                   buttonContent: "Valider",
                   action: () {
-                    Navigator.of(context).pushNamed(Home.routeName);
+                    Navigator.of(context).pushNamed(HomeMedical.routeName);
                   }),
             ],
           ),

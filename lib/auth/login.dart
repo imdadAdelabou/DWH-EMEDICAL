@@ -4,6 +4,8 @@ import 'package:emedical/components/custom_textformfield.dart';
 import 'package:emedical/helpers/constant.dart';
 import "package:flutter/material.dart";
 
+import '../views/home_medical.dart';
+
 class Login extends StatelessWidget {
   static String routeName = "/login";
   const Login({Key? key}) : super(key: key);
@@ -57,7 +59,9 @@ class Login extends StatelessWidget {
                   ),
                   CustomButton(
                     buttonContent: "Connexion",
-                    action: () {},
+                    action: () {
+                      Navigator.of(context).pushNamed(HomeMedical.routeName);
+                    },
                   ),
                   SizedBox(
                     height: 20,

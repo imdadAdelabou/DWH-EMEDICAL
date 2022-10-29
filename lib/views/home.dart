@@ -2,6 +2,7 @@ import 'package:emedical/components/card_post.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:gap/gap.dart';
+import 'package:emedical/views/home_medical.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
